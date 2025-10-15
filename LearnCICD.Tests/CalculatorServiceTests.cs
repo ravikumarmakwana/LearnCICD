@@ -40,6 +40,7 @@ namespace LearnCICD.Tests
         [Theory]
         [InlineData(6, 3, 2)]
         [InlineData(20, 4, 5)]
+        [InlineData(20, 0, 5)]
         public void Divide_ShouldReturnQuotient(int a, int b, double quotient)
         {
             var result = _calculatorService.Divide(a, b);
